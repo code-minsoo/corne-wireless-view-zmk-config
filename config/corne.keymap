@@ -9,6 +9,11 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
 
+&mt {
+        tapping-term-ms = <400>;
+};
+
+
 / {
          behaviors {
                 hm: homerow_mods {
@@ -18,9 +23,6 @@
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
-                };
-                &mt {
-                tapping-term-ms = <400>;
                 };
         };
         keymap {
